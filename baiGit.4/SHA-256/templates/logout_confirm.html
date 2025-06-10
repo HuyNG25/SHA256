@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App - Xác nhận đăng xuất</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Bạn có chắc muốn đăng xuất?</h1>
+        <div class="logout-options">
+            <button onclick="window.history.back()">Không</button>
+            <button onclick="location.href='{{ url_for('logout') }}'">Đồng ý</button> 
+        </div>
+    </div>
+</body>
+</html>
